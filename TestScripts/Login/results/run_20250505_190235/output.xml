@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20250505 19:02:35.588" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login">
+<suite id="s1-s1" name="TC 01" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_01.robot">
+<test id="s1-s1-t1" name="TC_01_user interacting leafground" line="13">
+<kw name="Open the browser" library="Leaf_ground">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:02:38.932" endtime="20250505 19:02:40.282"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:38.931" endtime="20250505 19:02:40.282"/>
+</kw>
+<kw name="Interacting with textbox elements" library="Leaf_ground">
+<kw name="Textbox Element" library="library">
+<status status="PASS" starttime="20250505 19:02:40.283" endtime="20250505 19:02:41.321"/>
+</kw>
+<kw name="Interact Type Your Name" library="library">
+<msg timestamp="20250505 19:02:41.928" level="INFO">Type your name
+Append Country to this City.
+Verify if text box is disabled
+Clear the typed text.
+Retrieve the typed text.
+Type email and Tab. Confirm control moved to next element.
+Type about yourself
+
+Text Editor
+Text is matched
+Field is disabled</msg>
+<status status="PASS" starttime="20250505 19:02:41.321" endtime="20250505 19:02:41.929"/>
+</kw>
+<kw name="Retrieve Text" library="library">
+<msg timestamp="20250505 19:02:41.955" level="INFO">Given text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:41.929" endtime="20250505 19:02:41.955"/>
+</kw>
+<kw name="Error Message Text" library="library">
+<msg timestamp="20250505 19:02:42.371" level="INFO">Age is mandatory</msg>
+<status status="PASS" starttime="20250505 19:02:41.955" endtime="20250505 19:02:42.371"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:40.283" endtime="20250505 19:02:42.371"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:38.926" endtime="20250505 19:02:42.372"/>
+</test>
+<status status="PASS" starttime="20250505 19:02:35.613" endtime="20250505 19:02:42.373"/>
+</suite>
+<suite id="s1-s2" name="TC 02" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_02.robot">
+<test id="s1-s2-t1" name="TC_01 interacting with alert page" line="14">
+<kw name="Open the browser" library="Page_alert">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:02:42.386" endtime="20250505 19:02:43.097"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:42.385" endtime="20250505 19:02:43.097"/>
+</kw>
+<kw name="Interacts with alert page" library="Page_alert">
+<kw name="Alert Simple Dialog" library="library">
+<msg timestamp="20250505 19:02:47.631" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:43.097" endtime="20250505 19:02:47.631"/>
+</kw>
+<kw name="Alert Confirm Dialog" library="library">
+<msg timestamp="20250505 19:02:48.751" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:47.631" endtime="20250505 19:02:48.751"/>
+</kw>
+<kw name="Sweet Alert Dialog" library="library">
+<msg timestamp="20250505 19:02:50.880" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:48.751" endtime="20250505 19:02:50.881"/>
+</kw>
+<kw name="Sweet Model Dialog" library="library">
+<msg timestamp="20250505 19:02:53.174" level="INFO">Modal Dialog (Sweet Alert)
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:50.881" endtime="20250505 19:02:53.174"/>
+</kw>
+<kw name="Alert Prompt Dialog" library="library">
+<msg timestamp="20250505 19:02:55.389" level="INFO">Text is matched
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:53.175" endtime="20250505 19:02:55.389"/>
+</kw>
+<kw name="Sweet Alert Confirmation Dialog" library="library">
+<msg timestamp="20250505 19:02:59.372" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:55.390" endtime="20250505 19:02:59.372"/>
+</kw>
+<kw name="Min And Max Dialog" library="library">
+<msg timestamp="20250505 19:03:07.923" level="INFO">Text is matched
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:02:59.372" endtime="20250505 19:03:07.923"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:43.097" endtime="20250505 19:03:07.924"/>
+</kw>
+<status status="PASS" starttime="20250505 19:02:42.385" endtime="20250505 19:03:07.931"/>
+</test>
+<status status="PASS" starttime="20250505 19:02:42.375" endtime="20250505 19:03:07.938"/>
+</suite>
+<suite id="s1-s3" name="TC 03 Frame" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_03_Frame.robot">
+<test id="s1-s3-t1" name="TC_01 interacting with alert page" line="14">
+<kw name="Open the browser" library="Page_frame">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:03:07.973" endtime="20250505 19:03:08.530"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:07.973" endtime="20250505 19:03:08.530"/>
+</kw>
+<kw name="Interact with Frame" library="Page_frame">
+<kw name="Page Frame" library="library">
+<msg timestamp="20250505 19:03:11.472" level="INFO">Hurray! You Clicked Me.
+Count Frames
+Number of frames: 3</msg>
+<status status="PASS" starttime="20250505 19:03:08.531" endtime="20250505 19:03:11.472"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:08.530" endtime="20250505 19:03:11.472"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:07.972" endtime="20250505 19:03:11.472"/>
+</test>
+<status status="PASS" starttime="20250505 19:03:07.946" endtime="20250505 19:03:11.475"/>
+</suite>
+<suite id="s1-s4" name="TC 04 Window" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_04_Window.robot">
+<test id="s1-s4-t1" name="TC_01 interacting with windows page" line="14">
+<kw name="Open the browser" library="Page_window">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:03:11.487" endtime="20250505 19:03:11.983"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:11.487" endtime="20250505 19:03:11.984"/>
+</kw>
+<kw name="Interact with Window" library="Page_window">
+<kw name="Page Single Window" library="library">
+<msg timestamp="20250505 19:03:14.873" level="INFO">Window
+Dashboard
+Window</msg>
+<status status="PASS" starttime="20250505 19:03:11.985" endtime="20250505 19:03:14.875"/>
+</kw>
+<kw name="Page Multiple Window" library="library">
+<msg timestamp="20250505 19:03:18.353" level="INFO">Window
+Number of tabs: 3
+Back to main tab: Window</msg>
+<status status="PASS" starttime="20250505 19:03:14.875" endtime="20250505 19:03:18.353"/>
+</kw>
+<kw name="Except Main Window" library="library">
+<msg timestamp="20250505 19:03:22.028" level="INFO">Window
+Number of tabs: 4
+Window</msg>
+<status status="PASS" starttime="20250505 19:03:18.353" endtime="20250505 19:03:22.029"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:11.985" endtime="20250505 19:03:22.029"/>
+</kw>
+<status status="PASS" starttime="20250505 19:03:11.486" endtime="20250505 19:03:22.030"/>
+</test>
+<status status="PASS" starttime="20250505 19:03:11.476" endtime="20250505 19:03:22.032"/>
+</suite>
+<suite id="s1-s5" name="TC 05 Drag and Drop" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_05_Drag_and_Drop.robot">
+<test id="s1-s5-t1" name="TC_01 interacting with windows page" line="14">
+<kw name="Open the browser" library="Page_draganddrop">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<msg timestamp="20250505 19:03:22.312" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B53DEFA5+77893]
+	GetHandleVerifier [0x00007FF7B53DF000+77984]
+	(No symbol) [0x00007FF7B51A8FEC]
+	(No symbol) [0x00007FF7B51EF44F]
+	(No symbol) [0x00007FF7B5226FF2]
+	(No symbol) [0x00007FF7B5221A02]
+	(No symbol) [0x00007FF7B5220AC9]
+	(No symbol) [0x00007FF7B5175AB5]
+	GetHandleVerifier [0x00007FF7B5697B6D+2931725]
+	GetHandleVerifier [0x00007FF7B5692132+2908626]
+	GetHandleVerifier [0x00007FF7B56B00F3+3031443]
+	GetHandleVerifier [0x00007FF7B53F91EA+184970]
+	GetHandleVerifier [0x00007FF7B540086F+215311]
+	(No symbol) [0x00007FF7B5174B2C]
+	GetHandleVerifier [0x00007FF7B57A2518+4023736]
+	BaseThreadInitThunk [0x00007FFD932A259D+29]
+	RtlUserThreadStart [0x00007FFD93C4AF58+40]
+</msg>
+<status status="FAIL" starttime="20250505 19:03:22.060" endtime="20250505 19:03:22.352"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:03:22.059" endtime="20250505 19:03:22.353"/>
+</kw>
+<kw name="Interacts with draganddrop page" library="Page_draganddrop">
+<status status="NOT RUN" starttime="20250505 19:03:22.354" endtime="20250505 19:03:22.354"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:03:22.058" endtime="20250505 19:03:22.354">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B53DEFA5+77893]
+	GetHandleVerifier [0x00007FF7B53DF000+77984]
+	(No symbol) [0x00007FF7B51A8FEC]
+	(No symbol) [0x00007FF7B51EF44F]
+	(No symbol) [0x00007FF7B5226FF2]
+	(No symbol) [0x00007FF7B5221A02]
+	(No symbol) [0x00007FF7B5220AC9]
+	(No symbol) [0x00007FF7B5175AB5]
+	GetHandleVerifier [0x00007FF7B5697B6D+2931725]
+	GetHandleVerifier [0x00007FF7B5692132+2908626]
+	GetHandleVerifier [0x00007FF7B56B00F3+3031443]
+	GetHandleVerifier [0x00007FF7B53F91EA+184970]
+	GetHandleVerifier [0x00007FF7B540086F+215311]
+	(No symbol) [0x00007FF7B5174B2C]
+	GetHandleVerifier [0x00007FF7B57A2518+4023736]
+	BaseThreadInitThunk [0x00007FFD932A259D+29]
+	RtlUserThreadStart [0x00007FFD93C4AF58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20250505 19:03:22.035" endtime="20250505 19:03:22.357"/>
+</suite>
+<suite id="s1-s6" name="TC 06 Button" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_06_Button.robot">
+<test id="s1-s6-t1" name="TC_01 interacting with button page" line="14">
+<kw name="Open the browser" library="Page_button">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<msg timestamp="20250505 19:03:22.382" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B53DEFA5+77893]
+	GetHandleVerifier [0x00007FF7B53DF000+77984]
+	(No symbol) [0x00007FF7B51A8FEC]
+	(No symbol) [0x00007FF7B51EF44F]
+	(No symbol) [0x00007FF7B5226FF2]
+	(No symbol) [0x00007FF7B5221A02]
+	(No symbol) [0x00007FF7B5220AC9]
+	(No symbol) [0x00007FF7B5175AB5]
+	GetHandleVerifier [0x00007FF7B5697B6D+2931725]
+	GetHandleVerifier [0x00007FF7B5692132+2908626]
+	GetHandleVerifier [0x00007FF7B56B00F3+3031443]
+	GetHandleVerifier [0x00007FF7B53F91EA+184970]
+	GetHandleVerifier [0x00007FF7B540086F+215311]
+	(No symbol) [0x00007FF7B5174B2C]
+	GetHandleVerifier [0x00007FF7B57A2518+4023736]
+	BaseThreadInitThunk [0x00007FFD932A259D+29]
+	RtlUserThreadStart [0x00007FFD93C4AF58+40]
+</msg>
+<status status="FAIL" starttime="20250505 19:03:22.380" endtime="20250505 19:03:22.383"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:03:22.379" endtime="20250505 19:03:22.383"/>
+</kw>
+<kw name="Verify click and confirm title in Leafground page" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.384" endtime="20250505 19:03:22.384"/>
+</kw>
+<kw name="Verify confirm if the button is disabled" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.384" endtime="20250505 19:03:22.385"/>
+</kw>
+<kw name="Verify find the position of the submit button" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.385" endtime="20250505 19:03:22.385"/>
+</kw>
+<kw name="Verify find the height and width of this button" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.386" endtime="20250505 19:03:22.386"/>
+</kw>
+<kw name="Verify mouse over and confirm the color changed" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.386" endtime="20250505 19:03:22.386"/>
+</kw>
+<kw name="Verify how many rounded buttons are there?" library="Page_button">
+<status status="NOT RUN" starttime="20250505 19:03:22.392" endtime="20250505 19:03:22.392"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:03:22.378" endtime="20250505 19:03:22.393">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B53DEFA5+77893]
+	GetHandleVerifier [0x00007FF7B53DF000+77984]
+	(No symbol) [0x00007FF7B51A8FEC]
+	(No symbol) [0x00007FF7B51EF44F]
+	(No symbol) [0x00007FF7B5226FF2]
+	(No symbol) [0x00007FF7B5221A02]
+	(No symbol) [0x00007FF7B5220AC9]
+	(No symbol) [0x00007FF7B5175AB5]
+	GetHandleVerifier [0x00007FF7B5697B6D+2931725]
+	GetHandleVerifier [0x00007FF7B5692132+2908626]
+	GetHandleVerifier [0x00007FF7B56B00F3+3031443]
+	GetHandleVerifier [0x00007FF7B53F91EA+184970]
+	GetHandleVerifier [0x00007FF7B540086F+215311]
+	(No symbol) [0x00007FF7B5174B2C]
+	GetHandleVerifier [0x00007FF7B57A2518+4023736]
+	BaseThreadInitThunk [0x00007FFD932A259D+29]
+	RtlUserThreadStart [0x00007FFD93C4AF58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20250505 19:03:22.359" endtime="20250505 19:03:22.395"/>
+</suite>
+<status status="FAIL" starttime="20250505 19:02:35.591" endtime="20250505 19:03:22.398"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="2" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC 01">Login.TC 01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC 02">Login.TC 02</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC 03 Frame">Login.TC 03 Frame</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="TC 04 Window">Login.TC 04 Window</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="TC 05 Drag and Drop">Login.TC 05 Drag and Drop</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s6" name="TC 06 Button">Login.TC 06 Button</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250505 19:02:38.900" level="WARN">Imported library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Py\properties.py' contains no keywords.</msg>
+<msg timestamp="20250505 19:02:38.905" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Leaf_ground.robot' on line 13: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:02:42.383" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_alert.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:03:07.963" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_frame.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:03:11.479" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_04_Window.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:03:11.484" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_window.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:03:22.042" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_05_Drag_and_Drop.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:03:22.052" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_draganddrop.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:03:22.364" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_06_Button.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:03:22.375" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_button.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20250506 19:15:21.434" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 07 Dropdown" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_07_Dropdown.robot">
+<test id="s1-t1" name="interacts with dropdown page" line="14">
+<kw name="Open the browser" library="Page_dropdown">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:26.019"/>
+</kw>
+<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:26.020"/>
+</kw>
+<kw name="Verify which is your favourite UI Automation tools" library="Page_dropdown">
+<arg>${select_tool_dropdown}</arg>
+<kw name="Select By Label" library="library">
+<arg>${select_tool_dropdown}</arg>
+<doc>Select an option from the dropdown by visible text (label).</doc>
+<msg timestamp="20250506 19:15:26.783" level="INFO">Selected 'Selenium' by visible text.</msg>
+<status status="PASS" starttime="20250506 19:15:26.021" endtime="20250506 19:15:26.783"/>
+</kw>
+<status status="PASS" starttime="20250506 19:15:26.020" endtime="20250506 19:15:26.783"/>
+</kw>
+<kw name="Verify Choose your preferred country" library="Page_dropdown">
+<arg>${select_country}</arg>
+<kw name="Country Dropdown" library="library">
+<arg>${select_country}</arg>
+<msg timestamp="20250506 19:15:30.991" level="INFO">Selected 'USA' from custom dropdown.</msg>
+<status status="PASS" starttime="20250506 19:15:26.783" endtime="20250506 19:15:30.991"/>
+</kw>
+<status status="PASS" starttime="20250506 19:15:26.783" endtime="20250506 19:15:30.992"/>
+</kw>
+<kw name="Verify Choose the course" library="Page_dropdown">
+<arg>${select_course}</arg>
+<kw name="Course Dropdown" library="library">
+<arg>${select_course}</arg>
+<msg timestamp="20250506 19:15:33.282" level="INFO">Selected 'Postman' from custom dropdown.</msg>
+<status status="PASS" starttime="20250506 19:15:30.993" endtime="20250506 19:15:33.282"/>
+</kw>
+<status status="PASS" starttime="20250506 19:15:30.992" endtime="20250506 19:15:33.282"/>
+</kw>
+<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:33.283"/>
+</test>
+<status status="PASS" starttime="20250506 19:15:21.435" endtime="20250506 19:15:33.285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 07 Dropdown">TC 07 Dropdown</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250506 19:15:21.626" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_07_Dropdown.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250506 19:15:21.633" level="WARN">Imported library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Py\properties.py' contains no keywords.</msg>
+<msg timestamp="20250506 19:15:23.209" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_dropdown.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+</errors>
+</robot>

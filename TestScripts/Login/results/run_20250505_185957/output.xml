@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20250505 18:59:57.115" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login">
+<suite id="s1-s1" name="TC 01" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_01.robot">
+<test id="s1-s1-t1" name="TC_01_user interacting leafground" line="13">
+<kw name="Open the browser" library="Leaf_ground">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:00.479" endtime="20250505 19:00:01.812"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:00.479" endtime="20250505 19:00:01.813"/>
+</kw>
+<kw name="Interacting with textbox elements" library="Leaf_ground">
+<kw name="Textbox Element" library="library">
+<status status="PASS" starttime="20250505 19:00:01.815" endtime="20250505 19:00:03.022"/>
+</kw>
+<kw name="Interact Type Your Name" library="library">
+<msg timestamp="20250505 19:00:03.442" level="INFO">Type your name
+Append Country to this City.
+Verify if text box is disabled
+Clear the typed text.
+Retrieve the typed text.
+Type email and Tab. Confirm control moved to next element.
+Type about yourself
+
+Text Editor
+Text is matched
+Field is disabled</msg>
+<status status="PASS" starttime="20250505 19:00:03.023" endtime="20250505 19:00:03.442"/>
+</kw>
+<kw name="Retrieve Text" library="library">
+<msg timestamp="20250505 19:00:03.465" level="INFO">Given text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:03.442" endtime="20250505 19:00:03.465"/>
+</kw>
+<kw name="Error Message Text" library="library">
+<msg timestamp="20250505 19:00:03.908" level="INFO">Age is mandatory</msg>
+<status status="PASS" starttime="20250505 19:00:03.465" endtime="20250505 19:00:03.908"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:01.814" endtime="20250505 19:00:03.908"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:00.477" endtime="20250505 19:00:03.908"/>
+</test>
+<status status="PASS" starttime="20250505 18:59:57.137" endtime="20250505 19:00:03.911"/>
+</suite>
+<suite id="s1-s2" name="TC 02" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_02.robot">
+<test id="s1-s2-t1" name="TC_01 interacting with alert page" line="14">
+<kw name="Open the browser" library="Page_alert">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:03.941" endtime="20250505 19:00:04.492"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:03.940" endtime="20250505 19:00:04.492"/>
+</kw>
+<kw name="Interacts with alert page" library="Page_alert">
+<kw name="Alert Simple Dialog" library="library">
+<msg timestamp="20250505 19:00:09.178" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:04.493" endtime="20250505 19:00:09.178"/>
+</kw>
+<kw name="Alert Confirm Dialog" library="library">
+<msg timestamp="20250505 19:00:10.293" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:09.178" endtime="20250505 19:00:10.293"/>
+</kw>
+<kw name="Sweet Alert Dialog" library="library">
+<msg timestamp="20250505 19:00:12.456" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:10.293" endtime="20250505 19:00:12.456"/>
+</kw>
+<kw name="Sweet Model Dialog" library="library">
+<msg timestamp="20250505 19:00:14.725" level="INFO">Modal Dialog (Sweet Alert)
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:12.456" endtime="20250505 19:00:14.725"/>
+</kw>
+<kw name="Alert Prompt Dialog" library="library">
+<msg timestamp="20250505 19:00:16.928" level="INFO">Text is matched
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:14.725" endtime="20250505 19:00:16.928"/>
+</kw>
+<kw name="Sweet Alert Confirmation Dialog" library="library">
+<msg timestamp="20250505 19:00:20.931" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:16.928" endtime="20250505 19:00:20.932"/>
+</kw>
+<kw name="Min And Max Dialog" library="library">
+<msg timestamp="20250505 19:00:29.491" level="INFO">Text is matched
+Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:20.932" endtime="20250505 19:00:29.492"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:04.493" endtime="20250505 19:00:29.492"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:03.940" endtime="20250505 19:00:29.492"/>
+</test>
+<status status="PASS" starttime="20250505 19:00:03.912" endtime="20250505 19:00:29.494"/>
+</suite>
+<suite id="s1-s3" name="TC 03 Frame" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_03_Frame.robot">
+<test id="s1-s3-t1" name="TC_01 interacting with alert page" line="14">
+<kw name="Open the browser" library="Page_frame">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:29.538" endtime="20250505 19:00:30.027"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:29.537" endtime="20250505 19:00:30.027"/>
+</kw>
+<kw name="Interact with Frame" library="Page_frame">
+<kw name="Page Frame" library="library">
+<msg timestamp="20250505 19:00:32.980" level="INFO">Hurray! You Clicked Me.
+Count Frames
+Number of frames: 3</msg>
+<status status="PASS" starttime="20250505 19:00:30.028" endtime="20250505 19:00:32.980"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:30.027" endtime="20250505 19:00:32.980"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:29.537" endtime="20250505 19:00:32.981"/>
+</test>
+<status status="PASS" starttime="20250505 19:00:29.497" endtime="20250505 19:00:32.984"/>
+</suite>
+<suite id="s1-s4" name="TC 04 Window" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_04_Window.robot">
+<test id="s1-s4-t1" name="TC_01 interacting with windows page" line="14">
+<kw name="Open the browser" library="Page_window">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:33.025" endtime="20250505 19:00:33.530"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:33.024" endtime="20250505 19:00:33.530"/>
+</kw>
+<kw name="Interact with Window" library="Page_window">
+<kw name="Page Single Window" library="library">
+<msg timestamp="20250505 19:00:36.276" level="INFO">Window
+Dashboard
+Window</msg>
+<status status="PASS" starttime="20250505 19:00:33.531" endtime="20250505 19:00:36.276"/>
+</kw>
+<kw name="Page Multiple Window" library="library">
+<msg timestamp="20250505 19:00:39.568" level="INFO">Window
+Number of tabs: 3
+Back to main tab: Window</msg>
+<status status="PASS" starttime="20250505 19:00:36.276" endtime="20250505 19:00:39.568"/>
+</kw>
+<kw name="Except Main Window" library="library">
+<msg timestamp="20250505 19:00:42.844" level="INFO">Window
+Number of tabs: 4</msg>
+<msg timestamp="20250505 19:00:42.844" level="FAIL">NameError: name 'main_window' is not defined</msg>
+<status status="FAIL" starttime="20250505 19:00:39.569" endtime="20250505 19:00:42.848"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:00:33.531" endtime="20250505 19:00:42.849"/>
+</kw>
+<status status="FAIL" starttime="20250505 19:00:33.021" endtime="20250505 19:00:42.850">NameError: name 'main_window' is not defined</status>
+</test>
+<status status="FAIL" starttime="20250505 19:00:32.987" endtime="20250505 19:00:42.854"/>
+</suite>
+<suite id="s1-s5" name="TC 05 Drag and Drop" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_05_Drag_and_Drop.robot">
+<test id="s1-s5-t1" name="TC_01 interacting with windows page" line="14">
+<kw name="Open the browser" library="Page_draganddrop">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:42.882" endtime="20250505 19:00:43.415"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:42.882" endtime="20250505 19:00:43.415"/>
+</kw>
+<kw name="Interacts with draganddrop page" library="Page_draganddrop">
+<kw name="Drag And Drop" library="library">
+<status status="PASS" starttime="20250505 19:00:43.416" endtime="20250505 19:00:45.436"/>
+</kw>
+<kw name="Drag Drop Target" library="library">
+<msg timestamp="20250505 19:00:46.075" level="INFO">Text is matched</msg>
+<status status="PASS" starttime="20250505 19:00:45.436" endtime="20250505 19:00:46.075"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:43.416" endtime="20250505 19:00:46.075"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:42.881" endtime="20250505 19:00:46.075"/>
+</test>
+<status status="PASS" starttime="20250505 19:00:42.857" endtime="20250505 19:00:46.078"/>
+</suite>
+<suite id="s1-s6" name="TC 06 Button" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_06_Button.robot">
+<test id="s1-s6-t1" name="TC_01 interacting with button page" line="14">
+<kw name="Open the browser" library="Page_button">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20250505 19:00:46.102" endtime="20250505 19:00:46.675"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:46.101" endtime="20250505 19:00:46.675"/>
+</kw>
+<kw name="Verify click and confirm title in Leafground page" library="Page_button">
+<kw name="Clickandconfirm Title" library="library">
+<msg timestamp="20250505 19:00:47.686" level="INFO">Dashboard</msg>
+<status status="PASS" starttime="20250505 19:00:46.676" endtime="20250505 19:00:47.686"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:46.676" endtime="20250505 19:00:47.686"/>
+</kw>
+<kw name="Verify confirm if the button is disabled" library="Page_button">
+<kw name="Confirm Button Disabled" library="library">
+<msg timestamp="20250505 19:00:48.097" level="INFO">Button is disabled</msg>
+<status status="PASS" starttime="20250505 19:00:47.687" endtime="20250505 19:00:48.097"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:47.687" endtime="20250505 19:00:48.097"/>
+</kw>
+<kw name="Verify find the position of the submit button" library="Page_button">
+<kw name="Button Position" library="library">
+<msg timestamp="20250505 19:00:48.207" level="INFO">submit button position: X=82,Y=398
+submit button size: Width=85,Height=32
+Submit button visible?True</msg>
+<status status="PASS" starttime="20250505 19:00:48.099" endtime="20250505 19:00:48.208"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:48.098" endtime="20250505 19:00:48.208"/>
+</kw>
+<kw name="Verify find the height and width of this button" library="Page_button">
+<kw name="Find H W Button" library="library">
+<msg timestamp="20250505 19:00:48.246" level="INFO">Submit button size: Width=86,Height=33</msg>
+<status status="PASS" starttime="20250505 19:00:48.209" endtime="20250505 19:00:48.247"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:48.208" endtime="20250505 19:00:48.247"/>
+</kw>
+<kw name="Verify mouse over and confirm the color changed" library="Page_button">
+<kw name="Button Hover Color Change" library="library">
+<msg timestamp="20250505 19:00:49.561" level="INFO">Before color: black
+After color:salmon
+Color changes on hover rgba(250, 128, 114, 1)</msg>
+<status status="PASS" starttime="20250505 19:00:48.248" endtime="20250505 19:00:49.561"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:48.247" endtime="20250505 19:00:49.562"/>
+</kw>
+<kw name="Verify how many rounded buttons are there?" library="Page_button">
+<kw name="Count Round Button" library="library">
+<msg timestamp="20250505 19:00:49.576" level="INFO">Number of rounded button:4</msg>
+<status status="PASS" starttime="20250505 19:00:49.563" endtime="20250505 19:00:49.576"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:49.562" endtime="20250505 19:00:49.576"/>
+</kw>
+<status status="PASS" starttime="20250505 19:00:46.100" endtime="20250505 19:00:49.577"/>
+</test>
+<status status="PASS" starttime="20250505 19:00:46.081" endtime="20250505 19:00:49.579"/>
+</suite>
+<status status="FAIL" starttime="20250505 18:59:57.118" endtime="20250505 19:00:49.583"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC 01">Login.TC 01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC 02">Login.TC 02</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC 03 Frame">Login.TC 03 Frame</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="TC 04 Window">Login.TC 04 Window</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="TC 05 Drag and Drop">Login.TC 05 Drag and Drop</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="TC 06 Button">Login.TC 06 Button</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250505 19:00:00.458" level="WARN">Imported library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Py\properties.py' contains no keywords.</msg>
+<msg timestamp="20250505 19:00:00.470" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Leaf_ground.robot' on line 13: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:00:03.938" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_alert.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:00:29.529" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_frame.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:00:32.993" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_04_Window.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:00:33.016" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_window.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:00:42.863" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_05_Drag_and_Drop.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:00:42.877" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_draganddrop.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250505 19:00:46.085" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_06_Button.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
+<msg timestamp="20250505 19:00:46.093" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_button.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+</errors>
+</robot>

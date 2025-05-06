@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230125 13:24:47.837" rpa="false" schemaversion="3">
+<suite id="s1" name="Appium" source="C:\Users\vinod\PycharmProjects\CSC\Pageclass\Appium.robot">
+<test id="s1-t1" name="Mobile Test" line="18">
+<kw name="Launch Mobile Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230125 13:24:48.001" endtime="20230125 13:25:08.467"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230125 13:25:38.474" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230125 13:25:08.467" endtime="20230125 13:25:38.475"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Vk']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230125 13:25:38.478" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Vk']'.</msg>
+<msg timestamp="20230125 13:25:42.337" level="INFO">xpath criteria: //android.widget.TextView[@text='Vk']</msg>
+<status status="PASS" starttime="20230125 13:25:38.475" endtime="20230125 13:25:42.337"/>
+</kw>
+<kw name="Get Element Attribute" library="AppiumLibrary">
+<var>${message}</var>
+<arg>id=com.android.messaging:id/message_text</arg>
+<arg>text</arg>
+<doc>Get element attribute using given attribute: name, value,...</doc>
+<msg timestamp="20230125 13:25:44.598" level="INFO">Element 'id=com.android.messaging:id/message_text' attribute 'text' value 'SMS passcodes (will expire in 1 hour): 1063298' </msg>
+<msg timestamp="20230125 13:25:44.598" level="INFO">criteria is com.android.messaging:id/message_text</msg>
+<msg timestamp="20230125 13:25:44.598" level="INFO">${message} = SMS passcodes (will expire in 1 hour): 1063298</msg>
+<status status="PASS" starttime="20230125 13:25:42.338" endtime="20230125 13:25:44.598"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230125 13:25:44.598" endtime="20230125 13:25:44.599"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${number only}</var>
+<arg>"${message}".split(" ")[7]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230125 13:25:44.599" level="INFO">${number only} = 1063298</msg>
+<status status="PASS" starttime="20230125 13:25:44.599" endtime="20230125 13:25:44.599"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${number only}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230125 13:25:44.599" endtime="20230125 13:25:44.600"/>
+</kw>
+<status status="PASS" starttime="20230125 13:24:48.001" endtime="20230125 13:25:44.600"/>
+</kw>
+<status status="PASS" starttime="20230125 13:24:48.001" endtime="20230125 13:25:44.600"/>
+</test>
+<status status="PASS" starttime="20230125 13:24:47.838" endtime="20230125 13:25:44.602"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Appium">Appium</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230125 13:24:47.996" level="ERROR">Error in file 'C:\Users\vinod\PycharmProjects\CSC\Pageclass\Appium.robot' on line 4: Importing library 'library' failed: ModuleNotFoundError: No module named 'library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python310\Scripts\robot.exe
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\vinod\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages
+  C:\Program Files\Python310\lib\site-packages\win32
+  C:\Program Files\Python310\lib\site-packages\win32\lib
+  C:\Program Files\Python310\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

@@ -1,0 +1,12 @@
+ desired_caps = {
+    "deviceName":"iPhone 12",
+    "platformName":"ios",
+    "platformVersion":"14",
+    "isRealMobile":True,
+    "app":"YOUR_APP_URL",
+    "build":"Python Vanilla iOS",
+    "name":"Sample Test - Python",
+    "network":False,
+    "visual":True,
+    "video":True
+}

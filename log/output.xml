@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230124 18:48:23.738" rpa="false" schemaversion="3">
+<suite id="s1" name="TC SharePoint login" source="C:\Users\vinod\PycharmProjects\CSC\TestScripts\Login\TC_SharePoint_login.robot">
+<test id="s1-t1" name="TC_01_login with valid credentials for sharepoint" line="15">
+<kw name="Open the browser" library="Rescind">
+<kw name="library.open browser">
+<arg>${url}</arg>
+<msg timestamp="20230124 18:49:19.332" level="FAIL">No keyword with name 'library.open browser' found.</msg>
+<status status="FAIL" starttime="20230124 18:49:19.332" endtime="20230124 18:49:19.332"/>
+</kw>
+<status status="FAIL" starttime="20230124 18:49:19.327" endtime="20230124 18:49:19.332"/>
+</kw>
+<kw name="login Sharepoint application" library="Rescind">
+<arg>${microsoft_username}</arg>
+<arg>${microsoft_password}</arg>
+<status status="NOT RUN" starttime="20230124 18:49:19.333" endtime="20230124 18:49:19.333"/>
+</kw>
+<status status="FAIL" starttime="20230124 18:49:19.326" endtime="20230124 18:49:19.333">No keyword with name 'library.open browser' found.</status>
+</test>
+<status status="FAIL" starttime="20230124 18:48:23.741" endtime="20230124 18:49:19.333"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC SharePoint login">TC SharePoint login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230124 18:48:29.249" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ECFBEA70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:33.327" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ECFBEB60&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:37.399" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ECFBECB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:41.491" level="ERROR">Error in file 'C:\Users\vinod\PycharmProjects\CSC\TestScripts\Login\TC_SharePoint_login.robot' on line 6: Importing library 'C:\Users\vinod\PycharmProjects\CSC\Py\library.py' failed: MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ECFBEE00&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\vinod\PycharmProjects\CSC\Py\library.py", line 43, in &lt;module&gt;
+    driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 294, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 316, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+PYTHONPATH:
+  C:\Users\vinod\PycharmProjects\CSC\Py
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\vinod\PycharmProjects\CSC
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\vinod\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages
+  C:\Program Files\Python310\lib\site-packages\win32
+  C:\Program Files\Python310\lib\site-packages\win32\lib
+  C:\Program Files\Python310\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230124 18:48:46.661" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED348070&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:50.756" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED348100&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:54.837" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED348220&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:48:58.922" level="ERROR">Error in file 'C:\Users\vinod\PycharmProjects\CSC\TestScripts\Login\TC_SharePoint_login.robot' on line 7: Importing library 'C:\Users\vinod\PycharmProjects\CSC\Py\library.py' failed: MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED348370&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\vinod\PycharmProjects\CSC\Py\library.py", line 43, in &lt;module&gt;
+    driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 294, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 316, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+PYTHONPATH:
+  C:\Users\vinod\PycharmProjects\CSC\Py
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\vinod\PycharmProjects\CSC
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\vinod\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages
+  C:\Program Files\Python310\lib\site-packages\win32
+  C:\Program Files\Python310\lib\site-packages\win32\lib
+  C:\Program Files\Python310\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230124 18:49:01.984" level="WARN">Imported library 'C:\Users\vinod\PycharmProjects\CSC\Py\properties.py' contains no keywords.</msg>
+<msg timestamp="20230124 18:49:07.069" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED34BA00&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:49:11.141" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED34BAF0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:49:15.226" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED34BD00&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20230124 18:49:19.308" level="ERROR">Error in file 'C:\Users\vinod\PycharmProjects\CSC\Pageclass\Rescind.robot' on line 9: Importing library 'C:\Users\vinod\PycharmProjects\CSC\Py\library.py' failed: MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D7ED34BE80&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\vinod\PycharmProjects\CSC\Py\library.py", line 43, in &lt;module&gt;
+    driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 294, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Program Files\Python310\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 316, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+PYTHONPATH:
+  C:\Users\vinod\PycharmProjects\CSC\Py
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\vinod\PycharmProjects\CSC
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib
+  C:\Users\vinod\AppData\Roaming\JetBrains\PyCharmCE2022.3\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  C:\Users\vinod\AppData\Roaming\Python\Python310\site-packages
+  C:\Program Files\Python310\lib\site-packages
+  C:\Program Files\Python310\lib\site-packages\win32
+  C:\Program Files\Python310\lib\site-packages\win32\lib
+  C:\Program Files\Python310\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230124 18:49:19.309" level="ERROR">Error in file 'C:\Users\vinod\PycharmProjects\CSC\Pageclass\Rescind.robot' on line 11: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+</errors>
+</robot>
