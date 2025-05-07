@@ -78,5 +78,26 @@ select_country_dropdown_field="(//*[@role='combobox'])[1]"
 country_name_dropdown_field="//li[@data-label='']"
 choose_the_course_dropdown_field="//*[@id='j_idt87:auto-complete_input']"
 
+#Menu_Page_Locators
+list_menu_tile="//*[@id='menuform:j_idt42']/a"
+menu_tile="//span[contains(text(),'Menu')]"
+customer_menu_bar="(//span[contains(text(),'Customers')])[1]"
+order_menu_bar="(//span[contains(text(),'Orders')])[1]"
+shipments_menu_bar="(//span[contains(text(),'Shipments')])[1]"
+profile_menu_bar="(//span[contains(text(),'Profile')])[1]"
+
+
+#Message_Locators
+misc_tile="//*[@id='menuform:j_idt43']/a"
+message_title="(//span[contains(text(),'Message')])[1]"
+info_button="(//span[contains(text(),'Info')])[1]"
+info_message="//*[@id='j_idt89:messages']/div/ul/li"
+info_close_icon="//*[@id='j_idt89:messages']/div/a"
+warning_button="(//span[contains(text(),'Warn')])[1]"
+warn_message="//*[@id='j_idt89:messages']/div/ul/li"
+warn_close_icon="//*[@id='j_idt89:messages']/div/a"
+
+
+
 
 

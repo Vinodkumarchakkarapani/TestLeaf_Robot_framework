@@ -1,59 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20250506 19:15:21.434" rpa="false" schemaversion="3">
-<suite id="s1" name="TC 07 Dropdown" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_07_Dropdown.robot">
-<test id="s1-t1" name="interacts with dropdown page" line="14">
-<kw name="Open the browser" library="Page_dropdown">
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20250507 15:18:01.420" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 09 Message" source="C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_09_Message.robot">
+<test id="s1-t1" name="interacts with menu page" line="13">
+<kw name="Open the browser" library="Page_Message">
 <kw name="Open Browser" library="library">
 <arg>${url}</arg>
-<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:26.019"/>
+<status status="PASS" starttime="20250507 15:18:03.380" endtime="20250507 15:18:04.456"/>
 </kw>
-<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:26.020"/>
+<status status="PASS" starttime="20250507 15:18:03.379" endtime="20250507 15:18:04.457"/>
 </kw>
-<kw name="Verify which is your favourite UI Automation tools" library="Page_dropdown">
-<arg>${select_tool_dropdown}</arg>
-<kw name="Select By Label" library="library">
-<arg>${select_tool_dropdown}</arg>
-<doc>Select an option from the dropdown by visible text (label).</doc>
-<msg timestamp="20250506 19:15:26.783" level="INFO">Selected 'Selenium' by visible text.</msg>
-<status status="PASS" starttime="20250506 19:15:26.021" endtime="20250506 19:15:26.783"/>
+<kw name="Verify the messages info warn and Error" library="Page_Message">
+<kw name="Message Title" library="library">
+<msg timestamp="20250507 15:18:06.073" level="INFO">InfoMessage Detail</msg>
+<msg timestamp="20250507 15:18:06.073" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61F4CEFA5+77893]
+	GetHandleVerifier [0x00007FF61F4CF000+77984]
+	(No symbol) [0x00007FF61F2991BA]
+	(No symbol) [0x00007FF61F2A0AEC]
+	(No symbol) [0x00007FF61F2A3B5C]
+	(No symbol) [0x00007FF61F2A3C2F]
+	(No symbol) [0x00007FF61F2E8D86]
+	(No symbol) [0x00007FF61F31712A]
+	(No symbol) [0x00007FF61F2E19E6]
+	(No symbol) [0x00007FF61F317340]
+	(No symbol) [0x00007FF61F33F07F]
+	(No symbol) [0x00007FF61F316F03]
+	(No symbol) [0x00007FF61F2E0328]
+	(No symbol) [0x00007FF61F2E1093]
+	GetHandleVerifier [0x00007FF61F787B6D+2931725]
+	GetHandleVerifier [0x00007FF61F782132+2908626]
+	GetHandleVerifier [0x00007FF61F7A00F3+3031443]
+	GetHandleVerifier [0x00007FF61F4E91EA+184970]
+	GetHandleVerifier [0x00007FF61F4F086F+215311]
+	GetHandleVerifier [0x00007FF61F4D6EC4+110436]
+	GetHandleVerifier [0x00007FF61F4D7072+110866]
+	GetHandleVerifier [0x00007FF61F4BD479+5401]
+	BaseThreadInitThunk [0x00007FF9C9DF259D+29]
+	RtlUserThreadStart [0x00007FF9CA7AAF58+40]
+</msg>
+<status status="FAIL" starttime="20250507 15:18:04.458" endtime="20250507 15:18:06.076"/>
 </kw>
-<status status="PASS" starttime="20250506 19:15:26.020" endtime="20250506 19:15:26.783"/>
+<status status="FAIL" starttime="20250507 15:18:04.457" endtime="20250507 15:18:06.077"/>
 </kw>
-<kw name="Verify Choose your preferred country" library="Page_dropdown">
-<arg>${select_country}</arg>
-<kw name="Country Dropdown" library="library">
-<arg>${select_country}</arg>
-<msg timestamp="20250506 19:15:30.991" level="INFO">Selected 'USA' from custom dropdown.</msg>
-<status status="PASS" starttime="20250506 19:15:26.783" endtime="20250506 19:15:30.991"/>
-</kw>
-<status status="PASS" starttime="20250506 19:15:26.783" endtime="20250506 19:15:30.992"/>
-</kw>
-<kw name="Verify Choose the course" library="Page_dropdown">
-<arg>${select_course}</arg>
-<kw name="Course Dropdown" library="library">
-<arg>${select_course}</arg>
-<msg timestamp="20250506 19:15:33.282" level="INFO">Selected 'Postman' from custom dropdown.</msg>
-<status status="PASS" starttime="20250506 19:15:30.993" endtime="20250506 19:15:33.282"/>
-</kw>
-<status status="PASS" starttime="20250506 19:15:30.992" endtime="20250506 19:15:33.282"/>
-</kw>
-<status status="PASS" starttime="20250506 19:15:23.212" endtime="20250506 19:15:33.283"/>
+<status status="FAIL" starttime="20250507 15:18:03.378" endtime="20250507 15:18:06.077">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61F4CEFA5+77893]
+	GetHandleVerifier [0x00007FF61F4CF000+77984]
+	(No symbol) [0x00007FF61F2991BA]
+	(No symbol) [0x00007FF61F2A0AEC]
+	(No symbol) [0x00007FF61F2A3B5C]
+	(No symbol) [0x00007FF61F2A3C2F]
+	(No symbol) [0x00007FF61F2E8D86]
+	(No symbol) [0x00007FF61F31712A]
+	(No symbol) [0x00007FF61F2E19E6]
+	(No symbol) [0x00007FF61F317340]
+	(No symbol) [0x00007FF61F33F07F]
+	(No symbol) [0x00007FF61F316F03]
+	(No symbol) [0x00007FF61F2E0328]
+	(No symbol) [0x00007FF61F2E1093]
+	GetHandleVerifier [0x00007FF61F787B6D+2931725]
+	GetHandleVerifier [0x00007FF61F782132+2908626]
+	GetHandleVerifier [0x00007FF61F7A00F3+3031443]
+	GetHandleVerifier [0x00007FF61F4E91EA+184970]
+	GetHandleVerifier [0x00007FF61F4F086F+215311]
+	GetHandleVerifier [0x00007FF61F4D6EC4+110436]
+	GetHandleVerifier [0x00007FF61F4D7072+110866]
+	GetHandleVerifier [0x00007FF61F4BD479+5401]
+	BaseThreadInitThunk [0x00007FF9C9DF259D+29]
+	RtlUserThreadStart [0x00007FF9CA7AAF58+40]
+</status>
 </test>
-<status status="PASS" starttime="20250506 19:15:21.435" endtime="20250506 19:15:33.285"/>
+<status status="FAIL" starttime="20250507 15:18:01.421" endtime="20250507 15:18:06.081"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 07 Dropdown">TC 07 Dropdown</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 09 Message">TC 09 Message</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20250506 19:15:21.626" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_07_Dropdown.robot' on line 7: Library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\Py\library.py' does not exist.</msg>
-<msg timestamp="20250506 19:15:21.633" level="WARN">Imported library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Py\properties.py' contains no keywords.</msg>
-<msg timestamp="20250506 19:15:23.209" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_dropdown.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20250507 15:18:01.631" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\TestScripts\Login\TC_09_Message.robot' on line 7: Library '..\Py\library.py' does not exist.</msg>
+<msg timestamp="20250507 15:18:01.636" level="WARN">Imported library 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Py\properties.py' contains no keywords.</msg>
+<msg timestamp="20250507 15:18:03.376" level="ERROR">Error in file 'C:\Users\vinod\OneDrive\Desktop\TestLeaf\Pageclass\Page_Message.robot' on line 6: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
 </errors>
 </robot>

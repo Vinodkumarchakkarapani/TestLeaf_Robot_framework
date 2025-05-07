@@ -495,3 +495,39 @@ def course_dropdown(course):
     course_element.send_keys(course)
     course_element.send_keys(Keys.ENTER)
     print(f"Selected '{course}' from custom dropdown.")
+
+# Menu page
+
+def menu_bar():
+    web_driver.refresh()
+    time.sleep(2)
+    wait_and_find(properties.list_menu_tile,'XPATH').click()
+    time.sleep(2)
+    wait_and_find(properties.menu_tile,'XPATH').click()
+    actions = ActionChains(web_driver)
+    menu_items={
+        "Customers":wait_and_find(properties.customer_menu_bar,'XPATH'),
+        "Orders":wait_and_find(properties.order_menu_bar,'XPATH'),
+        "Shipments":wait_and_find(properties.shipments_menu_bar,'XPATH'),
+        "Profile":wait_and_find(properties.profile_menu_bar,'XPATH')
+    }
+    for item in menu_items:
+        actions.move_to_element(menu_items[item]).perform()
+        time.sleep(1)
+        actions.click(menu_items[item]).perform()
+        time.sleep(1)
+        print(f"Selected {item} menu item.")
+
+#Message
+
+def message_title():
+    wait_and_find(properties.misc_tile,'XPATH').click()
+    wait_and_find(properties.message_title,'XPATH').click()
+    wait_and_find(properties.info_button,'XPATH').click()
+    info_message=wait_and_find(properties.info_message,'XPATH')
+    print(info_message.text)
+    wait_and_find(properties.info_close_icon,'XPATH').click()
+    wait_and_find(properties.warning_button,'XPATH').click()
+    warning_message=wait_and_find(properties.warn_message,'XPATH')
+    print(warning_message.text)
+    wait_and_find(properties.warn_close_icon,'XPATH').click()
